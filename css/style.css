@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color1:#cae8d5;
+    --color2: #777;
+
+    --headerfont: 'Tangerine', cursive;
+}
+
+body{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Start Navbar */
+
+.btns{
+    background: var(--color2);
+    color: white;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 16px;
+}
+
+.nav-link{
+    letter-spacing: 1px;
+}
+
+/* End Navbar  */
+
+/* Start Banner  */
+.img-blocks{
+    height: 100vh;
+    background-image: url("../assets/img/datas/slider1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+}
+
+.img-blocks::after{
+    content: '';
+    width: 50vw;
+    height: 80vh;
+    background: var(--color1);
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+
+    z-index: -1;
+}
+/* End Banner  */
+
+/* Start Banner */
+.headerfonts{
+    font-family: var(--headerfont);
+    font-size: 3rem;
+}
+
+.rows{
+    height: 250px;
+}
+
+.imgs{
+    width: 250px;
+}
+
+.paras{
+    text-align: center;
+    margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+    .imgs{
+        width: 150px;
+    }
+
+    .paras{
+        text-align: center;
+    }
+}
+/* End Banner */
+
+.carousel{
+    background-color: var(--color1);
+    height: 100vh;
+    position: relative;
+}
+
+.carousel-inner{
+    position: absolute;
+    top: -15%;
+    left: 3%;
+}
+
+.carousel-indicator{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+
+    z-index: 10;
+}
+
+.carousel-indicator button{
+    width: 28px;
+    height: 3px;
+    background-color: var(--color2);
+    border: 0;
+    cursor: pointer;
+}
+
+.card{
+    border: 0;
+    background-color: transparent;
+    width: 1000px;
+    text-align: center;
+}
+
+
+@media (max-width:1200px) {
+    .card{
+        width: 800px;
+    }
+
+    .carousel{
+        height: 100%;
+    }
+
+    .carousel-inner{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+
+    }
+}
+
+@media (max-width:780px) {
+    .card{
+        width: 500px;
+        border: 0;
+        background-color: transparent;
+        text-align: left;
+    }
+        
+    .card-body{
+        width: 300px;
+        text-align: justify;
+    }
+
+    .slider-imgs{
+        width: 500px;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        
+    }
+}
