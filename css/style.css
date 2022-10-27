@@ -20,6 +20,17 @@ body{
 }
 
 /* Start Navbar */
+.navbar{
+    background-color: #fff;
+    padding: 25px 30px;
+    transition: all 0.3s;
+    z-index: 100;
+}
+
+.navmenus{
+    background-color: #fff;
+    padding: 7px 30px;
+}
 
 .btns{
     background: var(--color2);
@@ -162,8 +173,6 @@ body{
         background-color: transparent;
         margin: auto;
     }
-        
-   
 
     .slider-imgs{
         width: 500px;
@@ -201,21 +210,171 @@ body{
 
 /* End Services */
 
-.accordion{
+/* Start Accordion  */
+
+.accordion-container{
+    width: 100%;
+    border: 1px solid var(--color2);
+}
+
+.accord-header{
+    color: var(--color2);
+    padding: 16px 20px;
+}
+
+.accord-title{
+    font-size: 20px;   
+}
+
+.accord-body{
+    padding: 16px 20px;
+}
+
+.collapse{
+    height: 0px;
+}
+
+.accord-item{
+    border-bottom: 1px solid #ccc;
+}
+
+/* End Accordion  */
+
+/* Start About  */
+.img-blocks-about{
+    width: 400px;
+    position: relative;
+}
+
+.img-blocks-about img{
+    width: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.img-blocks-about::after{
+    content: '';
+    width: 400px;
+    height: 300px;
+    background-color: var(--color1);
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+
+    z-index: -1;
+}
+
+@media (max-width: 1200px) {
+    .img-blocks-about img{
+        width: 300px;
+    }
+
+    .img-blocks-about::after{
+        display: none;
+    }
+}
+
+/* ENd About  */
+
+/* Start Contact Us  */
+.contacts{
+    background:linear-gradient(-110deg,
+        rgba(0,0,0,1)0%,
+        rgba(0,0,0,0.9)50%,
+        transparent 50%
+    ), url("../assets/img/datas/slider3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contacts h3{
+    color: springgreen;
+}
+
+.inputs{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid var(--color2);
+}
+
+.inputs:focus{
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.submit-btns{
+    background-color: transparent;
+    color: springgreen;
+    border: 0;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 1px solid springgreen;
+    transition: all 0.4s ease;
+}
+
+.submit-btns:hover{
+    background-color: springgreen;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .inputs::placeholder{
+       color: #f3f3f3;
+    }
+}
+
+/* End Contact Us  */
+
+/* Start Footer  */
+footer{
+    background-color: var(--color2);
+}
+
+.link-footers{
+    color: #bbb;
+    text-decoration: none;
+}
+
+.link-footers:hover{
+    color: #fff;
+}
+
+.subinputs{
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 30px;
     padding: 10px;
-    border: 1px solid #777;
-    margin: 20px 0;
-    color: var(--color2)
 }
 
-.acc-para{
-    display: none;
+.subinputs::placeholder{
+    color: white;
 }
 
-.acc-header{
-    cursor: pointer;
+.subinputs:focus{
+    background-color: transparent;
 }
 
-.accordion.active .acc-para{
-    display: block;
+.subscribe{
+    background-color: red;
+    color: white;
+    border: 0;
+    border-radius:0 30px 30px 0;
+    padding: 11px;
+    letter-spacing: 1px;
 }
+
+.icon-links{
+    text-decoration: none;
+    color: #bbb;
+    margin: 15px;
+}
+
+.icon-links:hover{
+    color: white;
+}
+/* End Footer  */

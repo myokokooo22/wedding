@@ -16,9 +16,9 @@
 </head>
 <body>
     <!-- START HEADER SECTION  -->
-    <header class="mb-5">
+    <header id="home" class="mb-5">
         <!-- Start Navbar -->
-        <nav class="navbar navbar-expand-lg bg-white navbar-white py-5">
+        <!-- <nav class="navbar navbar-expand-lg bg-white navbar-white fixed-top">
             <div class="container-fluid">
                 <a href="#home" class="navbar-brand text-uppercase fw-bold mx-3">Wedding Officiant</a>
                 <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
@@ -27,20 +27,43 @@
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link btns">Get Quote</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </nav> -->
+
+
+         <!-- Start Navbar -->
+         <nav class="navbar navbar-expand-lg bg-white navbar-white fixed-top">
+            <div class="container-fluid">
+                <a href="#home" class="navbar-brand text-uppercase fw-bold mx-3">Wedding Officiant</a>
+                <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="navbar-nav ms-auto bg-white text-center">
+                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">About</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link btns">Get Quote</a></li>
+                        <li class="nav-item mx-auto my-1"><a href="#" class="nav-link btns">Get Quote</a></li>
                     </ul>
                 </div>
             </div>            
         </nav>
         <!-- End Navbar  -->
+        <!-- End Navbar  -->
 
         <!-- Start Banner -->
-            <div class="container">
+            <div class="container py-4">
                 <div class="img-blocks"></div>
             </div>
         <!-- End Banner  -->
@@ -48,7 +71,7 @@
     <!-- END HEADER SECTION -->
         
     <!--START SERVICE SECTION-->
-    <section>
+    <section id="services">
         <div class="container mb-5">
             <div class="row text-center">
                 <h2 class="headerfonts">Our Services</h2>
@@ -177,7 +200,7 @@
     <!--END SLIDER SECTION-->
 
     <!-- START SERVICE SECTION  -->
-        <section class="services">
+        <section  id="faq"  class="services">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-12 mb-4 p-3">
@@ -260,51 +283,171 @@
     <!--START faq-->
         <section class="mb-5">
             <div class="container">
-                <div class="row text-center">
-                    <h2 class="headerfonts">Frequently Ask Questions</h2>
-                </div>
-            
-                <div id="accordion">
-                   <div class="accordion">
-                        <h5 class="acc-header">1. Where Can I bought My Wedding Ring?</h5>
-                        <div class="acc-para active">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque laborum cum rerum eius repellat repudiandae, aspernatur ut velit minima illo atque nostrum blanditiis amet harum, consequatur fugiat iusto iste.</p>
+                <div class="accordion-container">
+                    <div class="accord-item">
+                        <div class="accord-header">
+                            <div class="accord-title">1. Where Can I Bought My Wedding Rings?</div>
                         </div>
-                   </div>
+                        <div class="accord-content">
+                            <div class="accord-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore numquam, quaerat laborum iure ex molestias animi exercitationem blanditiis vero architecto debitis voluptate in eius obcaecati aliquid! Ipsum, magni veritatis.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accord-item">
+                        <div class="accord-header">
+                            <div class="accord-title">2. Where to find the best Reception on my Wedding Venue? </div>
+                        </div>
+                        <div class="accord-content collapse">
+                            <div class="accord-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore numquam, quaerat laborum iure ex molestias animi exercitationem blanditiis vero architecto debitis voluptate in eius obcaecati aliquid! Ipsum, magni veritatis.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="accord-item">
+                        <div class="accord-header">
+                            <div class="accord-title">3. What would I do on my Honeymoon?</div>
+                        </div>
+                        <div class="accord-content collapse">
+                            <div class="accord-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore numquam, quaerat laborum iure ex molestias animi exercitationem blanditiis vero architecto debitis voluptate in eius obcaecati aliquid! Ipsum, magni veritatis.
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="accordion">
-                    <h5 class="acc-header">2. Where To Find The Best Reception on my Wedding Venue?</h5>
-                    <div class="acc-para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque laborum cum rerum eius repellat repudiandae, aspernatur ut velit minima illo atque nostrum blanditiis amet harum, consequatur fugiat iusto iste.</p>
+                    <div class="accord-item">
+                        <div class="accord-header">
+                            <div class="accord-title">4. What's my Wedding Planner?</div>
+                        </div>
+                        <div class="accord-content collapse">
+                            <div class="accord-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus inventore numquam, quaerat laborum iure ex molestias animi exercitationem blanditiis vero architecto debitis voluptate in eius obcaecati aliquid! Ipsum, magni veritatis.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--END FAQ-->
+
+    <!--START ABOUT SECTION-->
+        <section id="about" class="mb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="headerfonts">About Us</h2>
+                </div>
+
+               <div class="row mb-4">
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <div class="img-blocks-about">
+                            <img src="./assets/img/datas/img5.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-12 mb-4">
+                        <h3>Our History</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos, velit quaerat placeat minima officia beatae veritatis, quisquam obcaecati impedit, quibusdam quae alias est dolorem asperiores quia eum veniam iusto.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos, velit quaerat placeat minima officia beatae veritatis, quisquam obcaecati impedit, quibusdam quae alias est dolorem asperiores quia eum veniam iusto.</p>
                     </div>
                </div>
 
-               <div class="accordion">
-                    <h5 class="acc-header">3. What Would I do on my Honeymoon</h5>
-                    <div class="acc-para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque laborum cum rerum eius repellat repudiandae, aspernatur ut velit minima illo atque nostrum blanditiis amet harum, consequatur fugiat iusto iste.</p>
+               <div class="row mb-4">
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <h3>Wedding Officiant</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos, velit quaerat placeat minima officia beatae veritatis, quisquam obcaecati impedit, quibusdam quae alias est dolorem asperiores quia eum veniam iusto.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos, velit quaerat placeat minima officia beatae veritatis, quisquam obcaecati impedit, quibusdam quae alias est dolorem asperiores quia eum veniam iusto.</p>
+                </div>
+
+                <div class="col-lg-6 col-sm-12 mb-4">
+                    <div class="img-blocks-about">
+                        <img src="./assets/img/datas/slider1.jpg" alt="">
                     </div>
                 </div>
 
-                <div class="accordion">
-                    <h5 class="acc-header">4. Invitation Letters How?</h5>
-                    <div class="acc-para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque laborum cum rerum eius repellat repudiandae, aspernatur ut velit minima illo atque nostrum blanditiis amet harum, consequatur fugiat iusto iste.</p>
-                    </div>
-                </div>
-
-                <div class="accordion">
-                    <h5 class="acc-header">5. What is My Wedding Planner?</h5>
-                    <div class="acc-para">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora neque laborum cum rerum eius repellat repudiandae, aspernatur ut velit minima illo atque nostrum blanditiis amet harum, consequatur fugiat iusto iste.</p>
-                    </div>
-                </div>
-
+           </div>
             </div>
 
-        </div>
-    </section>
-    <!--END FAQ-->
+        </section>
+    <!--END ABOUT SECTION-->
+
+    <!-- START CONTACT US SECTION  -->
+        <section id="contact">
+            <div class="container-fluid contacts py-5">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 col-sm-12">
+                        <h3>Contact Us</h3>
+                        <form action="" method="">
+                            <div class="form-group py-2">
+                                <input type="text" name="name" id="name" class="form-control inputs" placeholder="Enter Your Name" autocomplete="off">
+                            </div>
+
+                            <div class="form-group py-2">
+                                <input type="email" name="email" id="email" class="form-control inputs" placeholder="Enter Your Email" autocomplete="off">
+                            </div>
+
+                            <div class="form-group py-2">
+                                <input type="text" name="message" id="message" class="form-control inputs" placeholder="Enter Your Message" autocomplete="off">
+                            </div>
+
+                            <div class="text-center py-2">
+                                <button type="button" name="submit" id="submit" class="submit-btns">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- END CONTACT US SECTION  -->
+
+    <!--START FOOTER SECTION-->
+        <footer class="py-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-12 text-center mb-3">
+                        <h5 class="text-white">About Us</h5>
+                        <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor at ipsa sequi, cumque saepe ea. Sapiente eligendi iste aut fugit sed tempore quisquam cum reiciendis cumque! Soluta veritatis totam voluptates!</p>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12 text-center mb-3">
+                        <h5 class="text-white">Quick Link</h5>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link link-footers">About Us</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link link-footers">Services</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link link-footers">Testimonals</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link link-footers">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-12 text-center mb-3">
+                        <h5 class="text-white">Subscribe Newsletter</h5>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control text-white subinputs" placeholder="Enter your Email.">
+
+                            <div class="input-group-append">
+                                <button type="button" class="subscribe">Subscribe</button>
+                            </div>
+                        </div>
+
+                        <h5 class="text-white">Follow Us</h5>
+                            <a href="#" class="icon-links"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="icon-links"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="icon-links"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="icon-links"><i class="fab fa-linkedin-in"></i></a>                       
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="border-top py-5">
+            <h5 class="text-white text-center">Copyright &copy; <span id="year"></span> All rights reserved.</h5>
+        </footer>
+    <!--END FOOTER SECTION-->
 
     <!--bootstrap css1 js1-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
