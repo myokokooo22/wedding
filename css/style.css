@@ -91,6 +91,7 @@ body{
 }
 /* End Banner */
 
+/* Start Carousel  */
 .carousel{
     background-color: var(--color1);
     height: 100vh;
@@ -132,6 +133,11 @@ body{
         width: 800px;
     }
 
+    .card-body{
+        width: 100%;
+        margin: auto;
+    }
+
     .carousel{
         height: 100%;
     }
@@ -140,22 +146,24 @@ body{
         position: absolute;
         top: 0%;
         left: 0%;
-
     }
 }
 
-@media (max-width:780px) {
+@media (max-width: 780px) {
     .card{
         width: 500px;
+    }
+}
+
+@media (max-width:640px) {
+    .card{
+        width: 270px;
         border: 0;
         background-color: transparent;
-        text-align: left;
+        margin: auto;
     }
         
-    .card-body{
-        width: 300px;
-        text-align: justify;
-    }
+   
 
     .slider-imgs{
         width: 500px;
@@ -164,4 +172,50 @@ body{
         object-fit: cover;
         
     }
+}
+/* End Carousel  */
+
+/* Start Services  */
+.icons{
+    background-color: var(--color1);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+.icons img{
+    width: 75px;
+}
+
+@media (max-width: 1200px) {  
+    .services{
+       margin-top: 750px;
+    }
+}
+
+@media (max-width: 640px) {  
+    .services{
+        margin-top: 650px;
+    }
+}
+
+/* End Services */
+
+.accordion{
+    padding: 10px;
+    border: 1px solid #777;
+    margin: 20px 0;
+    color: var(--color2)
+}
+
+.acc-para{
+    display: none;
+}
+
+.acc-header{
+    cursor: pointer;
+}
+
+.accordion.active .acc-para{
+    display: block;
 }
