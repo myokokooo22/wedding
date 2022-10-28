@@ -13,22 +13,25 @@
 }
 
 body{
-    font-family: 'EB Garamond', serif;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    font-family: 'EB Garamond', serif;
 }
 
 /* Start Navbar */
+
 .navbar{
-    background-color: #fff;
+    background:rgba(255,255,255,0.8);
     padding: 25px 30px;
     transition: all 0.3s;
+    position: relative;
     z-index: 100;
+    width: 100%;
 }
 
 .navmenus{
     background-color: #fff;
+    color: var(--color2);
     padding: 7px 30px;
 }
 
@@ -40,6 +43,7 @@ body{
     border-radius: 20px;
     text-align: center;
     line-height: 16px;
+    margin: auto;
 }
 
 .nav-link{
@@ -48,6 +52,41 @@ body{
 
 /* End Navbar  */
 
+/* Slider Nav  */
+.slider-navs{
+    width: 50%;
+    height: 100vh;
+    background-color: var(--color1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;  
+    transform: translate(-100%);
+    transition: all 0.3s ease;
+}
+
+.slider-navs.active{
+    transform: translateX(0%);
+}
+
+.slider-navs ul{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.slider-navs ul li{
+    padding: 10px;
+}
+
+.btn-close{
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* End SLider Nav  */
+
 /* Start Banner  */
 .img-blocks{
     height: 100vh;
@@ -55,6 +94,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    /* background-attachment: fixed; */
 
     position: relative;
 }
@@ -70,6 +110,13 @@ body{
 
     z-index: -1;
 }
+
+@media (max-width:1200px) {
+    .img-blocks::after{
+        display: none;
+    }
+}
+
 /* End Banner  */
 
 /* Start Banner */
@@ -296,6 +343,7 @@ body{
 
 .inputs{
     background-color: transparent;
+    color: white !important;
     border: 0;
     border-radius: 0;
     border-bottom: 2px solid var(--color2);

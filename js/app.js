@@ -4,12 +4,26 @@ const navbar = document.querySelector('.navbar');
 window.addEventListener('scroll',()=>{
     const getscrollY = window.scrollY;
 
-    if(getscrollY >= 250){
+    if(getscrollY >= 200){
         navbar.classList.add('navmenus');
     }else{
         navbar.classList.remove('navmenus');
     }
 })
+
+//Slider Nav
+const sliderNav = document.querySelector('.slider-navs');
+const toggleBtn = document.getElementById('toggler');
+const closeBtn = document.getElementById('btn-close');
+
+toggleBtn.addEventListener('click',()=>{
+  sliderNav.classList.add('active');
+});
+
+closeBtn.addEventListener('click',()=>{
+  sliderNav.classList.remove('active');
+});
+
 //Accordion
 const accrodHeaders = document.querySelectorAll(".accord-header");
 accrodHeaders.forEach((ach) => {

@@ -17,37 +17,14 @@
 <body>
     <!-- START HEADER SECTION  -->
     <header id="home" class="mb-5">
-        <!-- Start Navbar -->
-        <!-- <nav class="navbar navbar-expand-lg bg-white navbar-white fixed-top">
-            <div class="container-fluid">
+        <!--Start Navbar Section-->
+         <nav class="navbar navbar-expand-lg justify-content-around position-fixed">         
                 <a href="#home" class="navbar-brand text-uppercase fw-bold mx-3">Wedding Officiant</a>
-                <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
+                <button type="button" id="toggler" class="navbar-toggler">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div class="d-none d-lg-flex">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
-                        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
-                        <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
-                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link btns">Get Quote</a></li>
-                    </ul>
-                </div>
-            </div>            
-        </nav> -->
-
-
-         <!-- Start Navbar -->
-         <nav class="navbar navbar-expand-lg bg-white navbar-white fixed-top">
-            <div class="container-fluid">
-                <a href="#home" class="navbar-brand text-uppercase fw-bold mx-3">Wedding Officiant</a>
-                <button type="button" class="navbar-toggler" data-bs-target="#navbar" data-bs-toggle="collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="navbar-nav ms-auto bg-white text-center">
                         <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
                         <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
                         <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
@@ -57,9 +34,22 @@
                         <li class="nav-item mx-auto my-1"><a href="#" class="nav-link btns">Get Quote</a></li>
                     </ul>
                 </div>
-            </div>            
-        </nav>
-        <!-- End Navbar  -->
+                
+                 <!-- start nav-slider -->
+                <div class="d-lg-none d-sm-block slider-navs">
+                    <button type="button" id="btn-close" class="btn-close" aria-label="Close"></button>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#services" class="nav-link">Services</a></li>
+                        <li><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li><a href="#blog" class="nav-link">Blog</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                        <li><a href="#" class="nav-link btns">Get Quote</a></li>
+                    </ul>
+                </div>
+                <!-- end nav-slider  -->
+            </nav>
         <!-- End Navbar  -->
 
         <!-- Start Banner -->
@@ -283,6 +273,10 @@
     <!--START faq-->
         <section class="mb-5">
             <div class="container">
+                <div class="row">
+                    <h2 class="headerfonts">Frequently Ask Questions</h2>
+                </div>
+
                 <div class="accordion-container">
                     <div class="accord-item">
                         <div class="accord-header">
@@ -333,17 +327,17 @@
     <!--END FAQ-->
 
     <!--START ABOUT SECTION-->
-        <section id="about" class="mb-5">
+     <section id="about" class="mb-5">
             <div class="container">
                 <div class="row text-center">
                     <h2 class="headerfonts">About Us</h2>
                 </div>
 
                <div class="row mb-4">
-                    <div class="col-lg-6 col-sm-12 mb-4">
-                        <div class="img-blocks-about">
+                    <div class="col-lg-6 col-sm-12 mb-4 img-blocks-about">
+                        
                             <img src="./assets/img/datas/img5.jpg" alt="">
-                        </div>
+                        
                     </div>
 
                     <div class="col-lg-6 col-sm-12 mb-4">
@@ -360,16 +354,16 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos, velit quaerat placeat minima officia beatae veritatis, quisquam obcaecati impedit, quibusdam quae alias est dolorem asperiores quia eum veniam iusto.</p>
                 </div>
 
-                <div class="col-lg-6 col-sm-12 mb-4">
-                    <div class="img-blocks-about">
+                <div class="col-lg-6 col-sm-12 mb-4 img-blocks-about">
+                   
                         <img src="./assets/img/datas/slider1.jpg" alt="">
-                    </div>
+                   
                 </div>
 
            </div>
             </div>
 
-        </section>
+        </section> 
     <!--END ABOUT SECTION-->
 
     <!-- START CONTACT US SECTION  -->
